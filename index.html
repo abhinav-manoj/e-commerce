@@ -8,26 +8,12 @@
 </head>
 <body>
     <!-- ROOT DIV -->
-    <div>
-        <header>
+    <div class="h-screen">
+        <header class="border-b-button border-b-4 flex justify-between items-center px-[2%] bg-header">
             
-            <img src="./img/logo.png" alt="">
-            <nav>
-                <div class='max-w-md mx-auto'>
-                    <div class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden">
-                        <div class="grid place-items-center h-full w-12 text-gray-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                            </svg>
-                        </div>
-                
-                        <input
-                        class="peer h-full w-full outline-none text-sm text-gray-700 pr-2"
-                        type="text"
-                        id="search"
-                        placeholder="Search something.." /> 
-                    </div>
-                </div>
+            <img class="w-16" src="./img/logo.png" alt="">
+            <nav class=" w-6/12 flex justify-between items-center text-text-c text-sm">
+                <input class="rounded-full text-sm p-[4px] text-left" placeholder="Search items" type="text">
                 <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_10_499)">
                     <path d="M6.26454 17.7091C6.69702 17.7091 7.04761 17.3585 7.04761 16.926C7.04761 16.4935 6.69702 16.1429 6.26454 16.1429C5.83207 16.1429 5.48148 16.4935 5.48148 16.926C5.48148 17.3585 5.83207 17.7091 6.26454 17.7091Z" stroke="white" stroke-width="1.56614" stroke-linecap="round" stroke-linejoin="round"/>
@@ -45,7 +31,25 @@
                     <a href="">Acount</a>
                     
             </nav>
+           
         </header>
+         <!-- FOR LOWER NAV -->
+         
+            <ul class="flex justify-evenly text-xs px-[6%] bg-nav py-[1%]">
+                <li>MEN</li>
+                <li>WOMEN</li>
+                <li>BEAUTY</li>
+                <li>WATCHES</li>
+                <li>KIDS</li>
+                <li>GIFTS</li>
+                <li>BRANDS</li>
+            </ul>
+            <!-- HERO SECTION -->
+            <div class="max-w-full">
+                <img class="max-w-full" src="./img/Hero.png" alt="">
+
+            </div>
+        
 
     </div>
     

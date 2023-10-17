@@ -9,7 +9,7 @@ module.exports = {
         'text-c':'#F3F4F6',
         'nav':'#EDECEC',
         'hero':'#D9D9D9',
-        'button':'#BD5012'
+        'button':'#EE874E'
       },
     },
   },
