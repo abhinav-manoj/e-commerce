@@ -15,7 +15,8 @@ module.exports = {
         'text-c':'#F3F4F6',
         'nav':'#EDECEC',
         'hero':'#D9D9D9',
-        'button':'#EE874E'
+        'button':'#EE874E',
+        'button2':'#BD5012',
       },
     },
   },
