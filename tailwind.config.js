@@ -8,6 +8,7 @@ module.exports = {
         roboto: ["Roboto", "sans-serif"],
 
       },
+      
       colors:{
         'header':'#466170',
         'search':'#94A3B8',
