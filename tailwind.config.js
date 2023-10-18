@@ -3,6 +3,11 @@ module.exports = {
   content: ['./*.html'],
   theme: {
     extend: {
+      fontFamily:{
+        poppin: ["Poppins", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
+
+      },
       colors:{
         'header':'#466170',
         'search':'#94A3B8',

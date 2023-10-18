@@ -1,57 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- ROOT DIV -->
-    <div class="h-screen">
-        <header class="border-b-button border-b-4 flex justify-between items-center px-[2%] bg-header">
-            
-            <img class="w-16" src="./img/logo.png" alt="">
-            <nav class=" w-6/12 flex justify-between items-center text-text-c text-sm">
-                <input class="rounded-full text-sm p-[4px] text-left" placeholder="Search items" type="text">
-                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_10_499)">
-                    <path d="M6.26454 17.7091C6.69702 17.7091 7.04761 17.3585 7.04761 16.926C7.04761 16.4935 6.69702 16.1429 6.26454 16.1429C5.83207 16.1429 5.48148 16.4935 5.48148 16.926C5.48148 17.3585 5.83207 17.7091 6.26454 17.7091Z" stroke="white" stroke-width="1.56614" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M14.8783 17.7091C15.3108 17.7091 15.6614 17.3585 15.6614 16.926C15.6614 16.4935 15.3108 16.1429 14.8783 16.1429C14.4458 16.1429 14.0952 16.4935 14.0952 16.926C14.0952 17.3585 14.4458 17.7091 14.8783 17.7091Z" stroke="white" stroke-width="1.56614" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M1.60529 2.08691H3.17142L5.25439 11.8126C5.3308 12.1688 5.52899 12.4872 5.81484 12.713C6.10069 12.9389 6.45632 13.058 6.82052 13.0499H14.4789C14.8354 13.0493 15.1809 12.9272 15.4586 12.7036C15.7362 12.4801 15.9293 12.1686 16.0059 11.8205L17.298 6.00226H4.00931" stroke="white" stroke-width="1.56614" stroke-linecap="round" stroke-linejoin="round"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_10_499">
-                    <rect width="18.7937" height="18.7937" fill="white" transform="translate(0 0.481567)"/>
-                    </clipPath>
-                    </defs>
-                    </svg>
-                    <a href="">Products</a>
-                    <a href="">Contact</a>
-                    <a href="">Acount</a>
-                    
-            </nav>
-           
-        </header>
-         <!-- FOR LOWER NAV -->
-         
-            <ul class="flex justify-evenly text-xs px-[6%] bg-nav py-[1%]">
-                <li>MEN</li>
-                <li>WOMEN</li>
-                <li>BEAUTY</li>
-                <li>WATCHES</li>
-                <li>KIDS</li>
-                <li>GIFTS</li>
-                <li>BRANDS</li>
-            </ul>
-            <!-- HERO SECTION -->
-            <div class="max-w-full">
-                <img class="max-w-full" src="./img/Hero.png" alt="">
+    <div class="h-screen font-roboto">
+      <header
+        class="border-b-button border-b-4 flex justify-between items-center px-[6%] bg-header"
+      >
+        <img class="w-12" src="./img/logo.png" alt="" />
+        <nav
+          class="w-6/12 flex justify-between items-baseline text-text-c text-[8px]"
+        >
+          <input
+            class="rounded-full text-[12px] p-[4px] text-left w-40 h-5"
+            placeholder="Search items"
+            type="text"
+          />
+          <svg
+            width="12"
+            height=""
+            viewBox="0 0 19 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_10_499)">
+              <path
+                d="M6.26454 17.7091C6.69702 17.7091 7.04761 17.3585 7.04761 16.926C7.04761 16.4935 6.69702 16.1429 6.26454 16.1429C5.83207 16.1429 5.48148 16.4935 5.48148 16.926C5.48148 17.3585 5.83207 17.7091 6.26454 17.7091Z"
+                stroke="white"
+                stroke-width="1.56614"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14.8783 17.7091C15.3108 17.7091 15.6614 17.3585 15.6614 16.926C15.6614 16.4935 15.3108 16.1429 14.8783 16.1429C14.4458 16.1429 14.0952 16.4935 14.0952 16.926C14.0952 17.3585 14.4458 17.7091 14.8783 17.7091Z"
+                stroke="white"
+                stroke-width="1.56614"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M1.60529 2.08691H3.17142L5.25439 11.8126C5.3308 12.1688 5.52899 12.4872 5.81484 12.713C6.10069 12.9389 6.45632 13.058 6.82052 13.0499H14.4789C14.8354 13.0493 15.1809 12.9272 15.4586 12.7036C15.7362 12.4801 15.9293 12.1686 16.0059 11.8205L17.298 6.00226H4.00931"
+                stroke="white"
+                stroke-width="1.56614"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_10_499">
+                <rect
+                  width="18.7937"
+                  height="18.7937"
+                  fill="white"
+                  transform="translate(0 0.481567)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+          <a href="">Products</a>
+          <a href="">Contact</a>
+          <a href="">Acount</a>
+        </nav>
+      </header>
+      <!-- FOR LOWER NAV -->
 
-            </div>
-        
-
+      <ul class="flex justify-evenly h-20px text-[8px] px-[6%] bg-nav py-[7px]">
+        <li>MEN</li>
+        <li>WOMEN</li>
+        <li>BEAUTY</li>
+        <li>WATCHES</li>
+        <li>KIDS</li>
+        <li>GIFTS</li>
+        <li>BRANDS</li>
+      </ul>
+      <!-- HERO SECTION -->
+      <div class="max-w-full">
+        <img class="max-w-full" src="./img/Hero.png" alt="" />
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
