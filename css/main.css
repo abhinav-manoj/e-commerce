@@ -736,6 +736,10 @@ video {
   background-image: url('./img/Hero.png');
 }
 
+.bg-\[url\(\'https\:\/\/ik\.imagekit\.io\/8vdv1tq52\/Hero\.png\?updatedAt\=1697656931091\'\)\] {
+  background-image: url('https://ik.imagekit.io/8vdv1tq52/Hero.png?updatedAt=1697656931091');
+}
+
 .bg-cover {
   background-size: cover;
 }
