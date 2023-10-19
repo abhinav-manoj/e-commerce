@@ -13,31 +13,28 @@
     />
   </head>
   <body>
-    <!-- ROOT DIV -->
     <div class="min-h-screen font-roboto flex flex-col">
       <header
-        class="border-b-button border-b-4 flex justify-between items-center px-[6%] bg-header pr-[9%] pb-[1px]"
+        class="border-b-button border-b-4 flex justify-between items-center px-10 bg-header py-3"
       >
         <img
-          class="w-24"
+          class="w-20"
           src="https://ik.imagekit.io/8vdv1tq52/logo.png?updatedAt=1697656930627"
           alt=""
         />
         <!-- HAM BURGER -->
 
         <!-- HAM BURGER END -->
-        <nav
-          class="w-3/6 hidden md:flex justify-evenly items-baseline text-text-c text-[12px] mt-[2%]"
-        >
+        <nav class="flex text-text-c text-sm gap-7 items-center">
           <div class="relative">
             <input
-              class="rounded-full text-[15px] p-[4px] text-center w-48 h-7 text-black"
+              class="rounded-full text-sm w-48 h-7 text-black px-6"
               placeholder="Search items"
               type="text"
             />
             <svg
               class="absolute top-0 ml-1"
-              width="18"
+              width="17"
               height=""
               viewBox="0 0 22 22"
               fill="none"
@@ -102,50 +99,44 @@
           </svg>
           <a href="">Products</a>
           <a href="">Contact</a>
-          <a href="">Acount</a>
+          <a href="">Account</a>
         </nav>
       </header>
       <!-- FOR LOWER NAV -->
-
-      <ul
-        class="md:opacity-100 opacity-0 h-1/2 z-[-1] text-[20px] md:z-auto flex flex-col justify-between md:flex-row md:justify-evenly md:h-30px md:text-[13px] md:px-[6%] bg-nav py-[17px]"
-      >
-        <li class="mx-4 my-6 md:my-0">MEN</li>
-        <li class="mx-4 my-6 md:my-0">WOMEN</li>
-        <li class="mx-4 my-6 md:my-0">BEAUTY</li>
-        <li class="mx-4 my-6 md:my-0">WATCHES</li>
-        <li class="mx-4 my-6 md:my-0">KIDS</li>
-        <li class="mx-4 my-6 md:my-0">GIFTS</li>
-        <li class="mx-4 my-6 md:my-0">BRANDS</li>
+      <ul class="flex justify-around bg-nav py-3 px-7 text-sm">
+        <li>MEN</li>
+        <li>WOMEN</li>
+        <li>BEAUTY</li>
+        <li>WATCHES</li>
+        <li>KIDS</li>
+        <li>GIFTS</li>
+        <li>BRANDS</li>
       </ul>
       <!-- HERO SECTION -->
       <div
-        class="bg-[url('https://ik.imagekit.io/8vdv1tq52/Hero.png?updatedAt=1697656931091')] flex-1 w-full bg-no-repeat bg-center bg-cover flex flex-col md:flex-row px-[6%] justify-evenly md:justify-between items-center pb-[4%]"
+        class="bg-[url('https://ik.imagekit.io/8vdv1tq52/Hero.png?updatedAt=1697656931091')] flex-1 w-full bg-no-repeat
+         bg-center bg-cover flex flex-col md:flex-row  justify-evenly md:justify-around items-center"
       >
-        <div class="text-hero flex flex-col gap-7">
-          <h1 class="font-semibold text-[4rem] leading-[80px] drop-shadow-xl">
-            Discover the <br />
-            Ultimate Shopping <br />Experience!
+        <div class="text-hero flex flex-col gap-9 w-2/5">
+          <h1 class="font-bold text-7xl drop-shadow-xl">
+            Discover the Ultimate Shopping Experience!
           </h1>
           <p
             class="text-lg bg-black bg-opacity-40 p-[5px] text-left leading-8 shadow-lg"
           >
             Welcome to Happy Shoppy, your one-step destination for all your
-            shopping needs. <br />
-            We bring you a world of choices right at your fingertips. Whether
-            you're <br />
-            looking for the latest fashion trends cutting-edge electronics,
-            <br />
-            or everyday essential, we've got you covered.
+            shopping needs. We bring you a world of choices right at your
+            fingertips. Whether you're looking for the latest fashion trends
+            cutting-edge electronics, or everyday essential, we've got you
+            covered.
           </p>
         </div>
-        <div>
-          <button
-            class="bg-button2 rounded-xl shadow-xl self-start px-[30px] text-2xl text-text-c py-[16px]"
-          >
-            Start Exploring
-          </button>
-        </div>
+
+        <button
+          class="bg-button2 rounded-xl shadow-xl px-7 text-2xl text-text-c py-5"
+        >
+          Start Exploring
+        </button>
       </div>
     </div>
   </body>
