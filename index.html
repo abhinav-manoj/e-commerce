@@ -23,44 +23,76 @@
           alt=""
         />
         <!-- Hamburger Button -->
-    <div class="block md:hidden">
-      <button id="hamburger-btn" class="text-gray-100 active:text-gray-400 focus:outline-none">
-          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        <div class="block md:hidden">
+          <button
+            id="hamburger-btn"
+            class="text-gray-100 active:text-gray-400 focus:outline-none"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Overlay Menu -->
+        <div
+      id="overlay-menu"
+      class="hidden bg-white z-30 sm:block fixed top-0 -right-44 w-44 h-full text-black text-center transition-transform transform -translate-x-full duration-300 ease-in-out"
+    >
+      <div class="pt-28 pl-8 md:hidden mr-6 relative mx-auto">
+        <button class="absolute top-10 right-6" id="close"><svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.125 0.454545L6.60511 6.14347H6.71875L10.1989 0.454545H12.7415L8.21023 7.72727L12.7699 15H10.2131L6.71875 9.3892H6.60511L3.1108 15H0.553977L5.19176 7.72727L0.582386 0.454545H3.125Z" fill="#221818"/>
           </svg>
-      </button>
-  </div>
+          </button>
+        <p class="mb-6"><a href="product.html">Products</a></p>
+        <p class="mb-6"><a href="contact.html">Contact</a></p>
+        <p class="mb-6"><a href="account.html">Account</a></p>
+      </div>
 
-  <!-- Overlay Menu -->
-  <div id="overlay-menu" class="hidden fixed top-16  left-0 w-0 h-full text-black transition-transform transform
-   -translate-x-full duration-300 ease-in-out">
-   
-      <ul class="pt-12 pl-8 md:hidden">
-          <li class="mb-6"><a href="men.html">Men</a></li>
-          <li class="mb-6"><a href="women.html">Women</a></li>
-          <li class="mb-6"><a href="beauty.html">Beauty</a></li>
-          <li class="mb-6" ><a href="watches.html">Watches</a></li>
-          <li class="mb-6"><a href="kids.html">Kids</a></li>
-          <li class="mb-6"><a href="gifts.html">Gifts</a></li>
-          <li><a href="brands.html">Brands</a></li>
-      </ul>
+      <div class="pt-5 pl-8 md:hidden mr-6">
+        <p class="mb-6"><a href="men.html">Men</a></p>
+        <p class="mb-6"><a href="women.html">Women</a></p>
+        <p class="mb-6"><a href="beauty.html">Beauty</a></p>
+        <p class="mb-6"><a href="watches.html">Watches</a></p>
+        <p class="mb-6"><a href="kids.html">Kids</a></p>
+        <p class="mb-6"><a href="gifts.html">Gifts</a></p>
+        <p><a href="brands.html">Brands</a></p>
+      </div>
+    </div>
     
-  </div>
+  
 
-  <script>
-      const hamburgerBtn = document.getElementById('hamburger-btn');
-      const overlayMenu = document.getElementById('overlay-menu');
+    <script>
+      const hamburgerBtn = document.getElementById("hamburger-btn");
+      const overlayMenu = document.getElementById("overlay-menu");
+      const closeBtn= document.getElementById("close")
 
-      hamburgerBtn.addEventListener('click', () => {
-          overlayMenu.classList.toggle('hidden');
-      });
-  </script>
-
-        <!-- HAM BURGER END -->
+      hamburgerBtn.addEventListener("click", () => {
+        overlayMenu.classList.toggle("hidden");
        
+      });
+      closeBtn.addEventListener("click",() =>{
+        overlayMenu.classList.toggle("hidden");
+      })
+    </script>
+       
+       
+        <!-- HAM BURGER END -->
 
-      
-        <nav class="hidden text-text-c text-sm md:gap-7 md:items-center md:flex">
+        <nav
+          class="hidden text-text-c text-sm md:gap-7 md:items-center md:flex"
+        >
           <div class="relative">
             <input
               class="rounded-full text-sm w-48 h-7 text-black px-6 hidden md:flex"
@@ -92,7 +124,7 @@
             </svg>
           </div>
           <svg
-          class="hidden md:flex"
+            class="hidden md:flex"
             width="15"
             height=""
             viewBox="0 0 19 20"
@@ -138,6 +170,8 @@
           <a href="" class="hidden md:flex">Account</a>
         </nav>
       </header>
+      
+
       <!-- FOR LOWER NAV -->
       <ul class="md:flex justify-around bg-nav py-3 px-7 text-sm hidden">
         <li><a href="men.html">MEN</a></li>
@@ -148,11 +182,10 @@
         <li>GIFTS</li>
         <li>BRANDS</li>
       </ul>
-      
+
       <!-- HERO SECTION -->
       <div
-        class="bg-[url('https://ik.imagekit.io/8vdv1tq52/Hero.png?updatedAt=1697656931091')]  flex-1 bg-no-repeat
-         bg-center bg-cover flex flex-col md:flex-row justify-center gap-9 md:justify-around md:items-center w-full px-5 md:p-0"
+        class="bg-[url('https://ik.imagekit.io/8vdv1tq52/Hero.png?updatedAt=1697656931091')] flex-1 bg-no-repeat bg-center bg-cover flex flex-col md:flex-row justify-center gap-9 md:justify-around md:items-center w-full px-5 md:p-0"
       >
         <div class="text-hero flex flex-col gap-9 md:w-1/2">
           <h1 class="font-bold text-3xl md:text-7xl drop-shadow-xl">
@@ -172,7 +205,7 @@
         <button
           class="bg-button2 rounded-xl shadow-xl md:text-2xl text-text-c py-3 px-4 text-sm md:px-7 md:py-5 self-start md:self-center"
         >
-          Start Exploring
+          <a href="men.html">Start Exploring</a>
         </button>
       </div>
     </div>
