@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Men</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,29 +13,83 @@
     />
   </head>
   <body>
-    <!-- ROOT DIV -->
     <div class="min-h-screen font-roboto flex flex-col">
       <header
-        class="border-b-button border-b-4 flex justify-between items-center px-[6%] bg-header"
+        class="border-b-button border-b-4 flex justify-between items-center px-10 bg-header py-3"
       >
-        <img class="w-12" src="./img/logo.png" alt="" />
-        <nav
-          class="w-6/12 flex justify-between items-baseline text-text-c text-[8px]"
-        >
-        <div class="relative">
-          <input
-            class="rounded-full text-[12px] p-[4px] w-40 h-5 text-center text-black"
-            placeholder="Search items"
-            type="text"
-          />
-          <svg class="absolute top-0 ml-1" width="15" height="" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.72775 16.9895C13.5677 16.9895 16.6806 13.8766 16.6806 10.0366C16.6806 6.19665 13.5677 3.08374 9.72775 3.08374C5.88778 3.08374 2.77487 6.19665 2.77487 10.0366C2.77487 13.8766 5.88778 16.9895 9.72775 16.9895Z" stroke="#64748B" stroke-width="1.73822" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M18.4189 18.7278L14.6382 14.9471" stroke="#64748B" stroke-width="1.73822" stroke-linecap="round" stroke-linejoin="round"/>
+        <a href="index.html"><img
+          class="w-20"
+          src="https://ik.imagekit.io/8vdv1tq52/logo.png?updatedAt=1697656930627"
+          alt=""
+        /></a>
+        
+        <!-- Hamburger Button -->
+    <div class="block md:hidden">
+      <button id="hamburger-btn" class="text-gray-500 hover:text-gray-600 focus:outline-none">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+      </button>
+  </div>
+
+  <!-- Overlay Menu -->
+  <div id="overlay-menu" class="hidden fixed top-16 left-0 w-1/4 h-full bg-nav text-black transition-transform transform
+   -translate-x-full duration-300 ease-in-out">
+      <ul class="pt-12 pl-8 md:hidden">
+          <li class="mb-6"><a href="men.html">Men</a></li>
+          <li class="mb-6"><a href="women.html">Women</a></li>
+          <li class="mb-6"><a href="beauty.html">Beauty</a></li>
+          <li class="mb-6" ><a href="watches.html">Watches</a></li>
+          <li class="mb-6"><a href="kids.html">Kids</a></li>
+          <li class="mb-6"><a href="gifts.html">Gifts</a></li>
+          <li><a href="brands.html">Brands</a></li>
+      </ul>
+  </div>
+
+  <script>
+      const hamburgerBtn = document.getElementById('hamburger-btn');
+      const overlayMenu = document.getElementById('overlay-menu');
+
+      hamburgerBtn.addEventListener('click', () => {
+          overlayMenu.classList.toggle('hidden');
+      });
+  </script>
+
+        <!-- HAM BURGER END -->
+        <nav class="hidden md:flex text-text-c text-sm md:gap-7 md:items-center">
+          <div class="relative">
+            <input
+              class="rounded-full text-sm w-48 h-7 text-black px-6 hidden md:flex"
+              placeholder="Search items"
+              type="text"
+            />
+            <svg
+              class="absolute top-0 ml-1 "
+              width="17"
+              height=""
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.72775 16.9895C13.5677 16.9895 16.6806 13.8766 16.6806 10.0366C16.6806 6.19665 13.5677 3.08374 9.72775 3.08374C5.88778 3.08374 2.77487 6.19665 2.77487 10.0366C2.77487 13.8766 5.88778 16.9895 9.72775 16.9895Z"
+                stroke="#64748B"
+                stroke-width="1.73822"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M18.4189 18.7278L14.6382 14.9471"
+                stroke="#64748B"
+                stroke-width="1.73822"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
-            
-        </div>
+          </div>
           <svg
-            width="12"
+          class=""
+            width="15"
             height=""
             viewBox="0 0 19 20"
             fill="none"
@@ -75,23 +129,31 @@
               </clipPath>
             </defs>
           </svg>
-          <a href="">Products</a>
-          <a href="">Contact</a>
-          <a href="">Acount</a>
+          <a href="" class="">Products</a>
+          <a href="" class="">Contact</a>
+          <a href="" class="">Account</a>
         </nav>
       </header>
       <!-- FOR LOWER NAV -->
-
-      <ul class="flex justify-evenly h-20px text-[8px] px-[6%] bg-nav py-[7px]">
-        <li>MEN</li>
-        <li>WOMEN</li>
-        <li>BEAUTY</li>
+      <ul class="md:flex justify-around bg-nav py-3 px-7 text-sm hidden">
+        <li><a href="men.html">MEN</a></li>
+        <a href=""><li>WOMEN</li></a>
+        <a href=""><li>BEAUTY</li></a>
         <li>WATCHES</li>
         <li>KIDS</li>
         <li>GIFTS</li>
         <li>BRANDS</li>
       </ul>
+      
       <!-- HERO SECTION -->
+       <div id="main" class="flex flex-wrap">
+        <div id="element" class="flex flex-col bg-white shadow-lg">
+          
+
+
+        </div>
+
+       </div>
      
     </div>
   </body>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,10 +22,45 @@
           src="https://ik.imagekit.io/8vdv1tq52/logo.png?updatedAt=1697656930627"
           alt=""
         />
-        <!-- HAM BURGER -->
+        <!-- Hamburger Button -->
+    <div class="block md:hidden">
+      <button id="hamburger-btn" class="text-gray-100 active:text-gray-400 focus:outline-none">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+      </button>
+  </div>
+
+  <!-- Overlay Menu -->
+  <div id="overlay-menu" class="hidden fixed top-16  left-0 w-0 h-full text-black transition-transform transform
+   -translate-x-full duration-300 ease-in-out">
+   
+      <ul class="pt-12 pl-8 md:hidden">
+          <li class="mb-6"><a href="men.html">Men</a></li>
+          <li class="mb-6"><a href="women.html">Women</a></li>
+          <li class="mb-6"><a href="beauty.html">Beauty</a></li>
+          <li class="mb-6" ><a href="watches.html">Watches</a></li>
+          <li class="mb-6"><a href="kids.html">Kids</a></li>
+          <li class="mb-6"><a href="gifts.html">Gifts</a></li>
+          <li><a href="brands.html">Brands</a></li>
+      </ul>
+    
+  </div>
+
+  <script>
+      const hamburgerBtn = document.getElementById('hamburger-btn');
+      const overlayMenu = document.getElementById('overlay-menu');
+
+      hamburgerBtn.addEventListener('click', () => {
+          overlayMenu.classList.toggle('hidden');
+      });
+  </script>
 
         <!-- HAM BURGER END -->
-        <nav class="flex text-text-c text-sm gap-7 items-center">
+       
+
+      
+        <nav class="hidden text-text-c text-sm md:gap-7 md:items-center md:flex">
           <div class="relative">
             <input
               class="rounded-full text-sm w-48 h-7 text-black px-6 hidden md:flex"
@@ -105,8 +140,8 @@
       </header>
       <!-- FOR LOWER NAV -->
       <ul class="md:flex justify-around bg-nav py-3 px-7 text-sm hidden">
-        <li>MEN</li>
-        <li>WOMEN</li>
+        <li><a href="men.html">MEN</a></li>
+        <li><a href="women.html">WOMEN</a></li>
         <li>BEAUTY</li>
         <li>WATCHES</li>
         <li>KIDS</li>
