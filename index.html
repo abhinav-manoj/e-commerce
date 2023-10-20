@@ -28,12 +28,12 @@
         <nav class="flex text-text-c text-sm gap-7 items-center">
           <div class="relative">
             <input
-              class="rounded-full text-sm w-48 h-7 text-black px-6"
+              class="rounded-full text-sm w-48 h-7 text-black px-6 hidden md:flex"
               placeholder="Search items"
               type="text"
             />
             <svg
-              class="absolute top-0 ml-1"
+              class="absolute top-0 ml-1 hidden md:flex"
               width="17"
               height=""
               viewBox="0 0 22 22"
@@ -57,6 +57,7 @@
             </svg>
           </div>
           <svg
+          class="hidden md:flex"
             width="15"
             height=""
             viewBox="0 0 19 20"
@@ -97,13 +98,13 @@
               </clipPath>
             </defs>
           </svg>
-          <a href="">Products</a>
-          <a href="">Contact</a>
-          <a href="">Account</a>
+          <a href="" class="hidden md:flex">Products</a>
+          <a href="" class="hidden md:flex">Contact</a>
+          <a href="" class="hidden md:flex">Account</a>
         </nav>
       </header>
       <!-- FOR LOWER NAV -->
-      <ul class="flex justify-around bg-nav py-3 px-7 text-sm">
+      <ul class="md:flex justify-around bg-nav py-3 px-7 text-sm hidden">
         <li>MEN</li>
         <li>WOMEN</li>
         <li>BEAUTY</li>
@@ -115,11 +116,11 @@
       
       <!-- HERO SECTION -->
       <div
-        class="bg-[url('https://ik.imagekit.io/8vdv1tq52/Hero.png?updatedAt=1697656931091')] flex-1 w-full bg-no-repeat
-         bg-center bg-cover flex flex-col md:flex-row  justify-evenly md:justify-around items-center"
+        class="bg-[url('https://ik.imagekit.io/8vdv1tq52/Hero.png?updatedAt=1697656931091')] flex-1 bg-no-repeat
+         bg-center bg-cover flex flex-col md:flex-row  justify-evenly md:justify-around items-center w-full"
       >
-        <div class="text-hero flex flex-col gap-9 w-2/5">
-          <h1 class="font-bold text-7xl drop-shadow-xl">
+        <div class="text-hero flex flex-col gap-9 w-1/2">
+          <h1 class="font-bold text-5xl md:text-7xl drop-shadow-xl">
             Discover the Ultimate Shopping Experience!
           </h1>
           <p
